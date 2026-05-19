@@ -9,11 +9,8 @@
             console.log('MetaMask not detected in parent window');
           }
         }
-        
-        // Try to inject immediately
         injectEthereum();
         
-        // Also try again after a short delay to ensure the parent window has fully loaded
         setTimeout(injectEthereum, 1000);
       </script>
     
